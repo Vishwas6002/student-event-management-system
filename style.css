@@ -1,58 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Event Management System</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <header>
-        <h1>CampusConnect</h1>
-        <p>Student Event Management System</p>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
 
-    <nav>
-        <a href="events.html">Events</a>
-    </nav>
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
 
-    <section class="hero">
-        <h2>Upcoming College Events</h2>
-        <p>Explore exciting events happening on campus.</p>
-    </section>
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
 
-    <section class="events">
+header p {
+    font-size: 18px;
+}
 
-        <div class="event-card">
-            <h3>Tech Hackathon 2026</h3>
-            <p><strong>Date:</strong> 15 September 2026</p>
-            <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
-            <p>Build innovative solutions and compete with other students.</p>
-            <button>View Event</button>
-        </div>
+nav {
+    background-color: #172554;
+    text-align: center;
+    padding: 15px;
+}
 
-        <div class="event-card">
-            <h3>AI & Technology Symposium</h3>
-            <p><strong>Date:</strong> 20 September 2026</p>
-            <p><strong>Time:</strong> 10:00 AM - 3:00 PM</p>
-            <p>Learn about Artificial Intelligence and emerging technologies.</p>
-            <button>View Event</button>
-        </div>
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 
-        <div class="event-card">
-            <h3>Cultural Fest</h3>
-            <p><strong>Date:</strong> 25 September 2026</p>
-            <p><strong>Time:</strong> 4:00 PM - 8:00 PM</p>
-            <p>Enjoy music, dance, art and cultural performances.</p>
-            <button>View Event</button>
-        </div>
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
 
-    </section>
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
-    <footer>
-        <p>© 2026 CampusConnect | Student Event Management System</p>
-    </footer>
+.hero p {
+    font-size: 18px;
+}
 
-</body>
-</html>
+.events {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #172554;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
